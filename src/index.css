@@ -1,0 +1,71 @@
+:root {
+  --gold: #D4AF37;
+  --gold-light: #F3E5AB;
+  --gold-dark: #AA8222;
+  --black: #111111;
+  --black-light: #222222;
+  --white: #FDFDFD;
+  --gray: #888888;
+  --gray-light: #EEEEEE;
+  
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Lato', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--white);
+  color: var(--black);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--gold);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.3s ease;
+}
+
+input, select, textarea {
+  font-family: var(--font-body);
+}
+
+/* Base App Layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main.content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
